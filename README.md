@@ -9,7 +9,7 @@ This is a solution to [the code challenge](coding-challenge.pdf) built using Rea
 ### Architecture
 The app is composed of 3 distinct parts:
 
-1. **Models**: Contain the app data. Completely decoupled and independent of any other part of the app. Have no knowledge of views.
+1. **Models**: Contain the app data. Decoupled and independent of other parts of the app. Have no knowledge of views.
 
 2. **Components**: Contain the app views in the form of React components. Decoupled from the rest of the app. Have no knowledge of models.
 
