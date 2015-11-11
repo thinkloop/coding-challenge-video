@@ -24,7 +24,7 @@ The app is composed of 3 distinct sections:
 
 - **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modifiable inline in a WYSIWYG fashion.
 
-- **Data Loaded in Parallel**: If you take a look at the `models.loadAll()` method, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
+- **Data Loaded in Parallel**: In the `loadAll()` method of the `models/models` object, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
 
 - **Object Inheritance**: The `fullVideo` model inherits from the `clip` model using prototypical inheritance.
 
