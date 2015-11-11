@@ -1,5 +1,5 @@
 # Krossover Code Challenge Solution
-This is a solution to the [Krossover code challenge](coding-challenge.pdf) built using React JS, Browserify, LessCSS, Gulp and EventEmitter. A running demo can be found here: http://krossover.thinkloop.com/
+This is a solution to the [Krossover code challenge](coding-challenge.pdf) built using React JS, Browserify, LessCSS, Gulp and EventEmitter in Flux-style. A running demo can be found here: http://krossover.thinkloop.com/
 
 ### Installation
 1. Clone the repo
