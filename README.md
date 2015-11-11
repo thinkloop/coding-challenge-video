@@ -13,7 +13,7 @@ The app is composed of 3 distinct parts:
 
 2. **Components**: Contain the app views in the form of React components. Decoupled from the rest of the app. Have no knowledge of models.
 
-3. **Events**: The glue that connects models and components. Events are broadcast from views, and responded to by listeners that effect changes in models, which in turn re-render the components with new data.
+3. **Events**: The glue that connects models and components. Events are broadcast from views, and responded to by listeners that effect changes to models, which in turn re-render the components to update the views.
 
 ### Features
  
