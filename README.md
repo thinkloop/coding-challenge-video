@@ -32,7 +32,7 @@ The app is composed of 3 distinct sections:
 
 - **Automated Versioning**: The build process uses the version number in `package.json` to create files and folders with version numbers for easy cache invalidation and version tracking.
 
-- **Event Tracking**: Open the console while using the site and notice every event being logged. This can be extended to save all user interactions to a statistics backend.
+- **Event Tracking**: Open the console while using the site and notice every event being logged. This can be extended easily to save all user interactions to a statistics backend.
 
 - **Deployed and Hosted on CDN**: The running demo is currently hosted on AWS S3 & Cloudfront and scalable to millions of users.
 
