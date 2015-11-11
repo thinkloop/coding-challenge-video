@@ -18,9 +18,9 @@ The app is composed of 3 distinct sections:
 ### Features
  
 - **Intricate States**: Various elements are displayed, hidden or styled based on context, for example:
-    - **Save button** is hidden if clip data is empty
-    - **Play button** changes style when a clip is played
-    - **Video** stops playing when a different clip starts being edited
+    - _Save button_ is hidden if clip data is empty
+    - _Play button_ changes style when a clip is played
+    - _Video_ stops playing when a different clip starts being edited
 
 - **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modifiable inline in a WYSIWYG fashion.
 
