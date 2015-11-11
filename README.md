@@ -18,7 +18,7 @@ The app is composed of 3 distinct sections:
 ### Features
  
 - **Intricate States**: Various elements are displayed, hidden or styled based on context, for example:
-    - _Save button_ is hidden if clip data is empty
+    - _Save button_ is hidden if clip has no data in any of its fields
     - _Play button_ changes style when a clip is played
     - _Video_ stops playing when a different clip starts being edited
 
