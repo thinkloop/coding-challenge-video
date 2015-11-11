@@ -42,13 +42,13 @@ The app is composed of 3 distinct sections:
 ### Sources of Improvement
 - **Data Validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks for these inputs.
 
-- **IE Edge Compatibility**: Media fragments are not fully supported in IE, an improved solution would be to use Javascript to navigate the video.
-
-- **Mobile Compatibility**: I did not verify whether the app looks good on mobile os's (android, ios, wp, etc.)
-
 - **Add Confirmation for Delete Clip Action**: Clicking on the delete clip button instantly deletes the clip without confirmation which could lead to mistakes. 
 
 - **Detect When a Clip Finishes Playing**: When a clip finishes playing there are no app events that get fired to update the UI with that fact.
+
+- **Mobile Compatibility**: I did not verify whether the app looks good on mobile os's (android, ios, wp, etc.)
+
+- **IE Edge Compatibility**: Media fragments are not fully supported in IE, an improved solution would be to use Javascript to navigate the video.
 
 ### Conclusion
 This was a fun and useful excercise, and I would be happy to give a guided tour of the code at any time. 
