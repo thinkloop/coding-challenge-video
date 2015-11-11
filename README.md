@@ -44,7 +44,7 @@ The app is composed of 3 distinct parts:
 
 - **Detect when a clip finishes playing**: When a clip finishes playing, no app events are fired to update the UI or perform other actions.
 
-- **Add safeguards when deleting clips**: Clicking the delete button instantly deletes the clip without confirmation or safeguards.
+- **Add safeguards when deleting clips**: Clicking the clip delete button instantly deletes a clip without confirmation or safeguards.
 
 - **Mobile compatibility**: I did not verify whether the app looks good on mobile OS's (android, ios, wp, etc.).
 
