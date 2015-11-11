@@ -42,7 +42,7 @@ The app is composed of 3 distinct sections:
 ### Sources of Improvement
 - **Data Validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks for these inputs.
 
-- **Detect When a Clip Finishes Playing**: When a clip finishes playing there are no app events that get fired to update the UI with that fact.
+- **Detect When a Clip Finishes Playing**: When a clip finishes playing there are no app events that get fired to update the UI.
 
 - **Add Confirmation for Delete Clip Action**: Clicking on the delete clip button instantly deletes the clip without confirmation which could lead to mistakes. 
 
