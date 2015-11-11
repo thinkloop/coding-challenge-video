@@ -44,7 +44,7 @@ The app is composed of 3 distinct sections:
 
 - **Detect When a Clip Finishes Playing**: When a clip finishes playing there are no app events that get fired to update the UI.
 
-- **Add Confirmation for Delete Clip Action**: Clicking on the delete clip button instantly deletes the clip without confirmation which could lead to mistakes. 
+- **Add Confirmation for Delete Clip Action**: Clicking on the delete clip button instantly deletes the clip without confirmation, which could lead to mistakes. 
 
 - **Mobile Compatibility**: I did not verify whether the app looks good on mobile os's (android, ios, wp, etc.)
 
