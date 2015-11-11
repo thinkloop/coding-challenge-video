@@ -18,13 +18,13 @@ The app is composed of 3 distinct sections:
 ### Features
  
 - **Intricate States**: Various elements are displayed, hidden or styled based on context, for example:
+    - _Play button_ changes style when a clip is being played
     - _Save button_ is hidden if clip has no data in any of its fields
-    - _Play button_ changes style when a clip is played
-    - _Video_ stops playing when a different clip starts being edited
+    - _Video_ stops playing when a different clip is selected for editing
 
 - **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modifiable inline in a WYSIWYG fashion.
 
-- **Async Data Loaded in Parallel**: If you take a look at the `models.loadAll()` method, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
+- **Data Loaded in Parallel**: If you take a look at the `models.loadAll()` method, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
 
 - **Object Inheritance**: The `fullVideo` model inherits from the `clip` model using prototypical inheritance.
 
