@@ -40,8 +40,9 @@ The app is composed of 3 distinct sections:
 
 
 ### Sources of Improvement
-- **Data Validation**: The `startTime` and `endTime` for media fragments expect the format `hh:mm:ss`, but there is currently no validation or mask for the inputs that handle that data.
-- **IE Edge Compatibility**: Media fragments are not fully supported in IE, so an improved solution would be to use JS to seek around the video.
+- **Data Validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks on the respective inputs.
+
+- **IE Edge Compatibility**: Media fragments are not fully supported in IE, an improved solution would be to use Javascript to navigate the video.
 
 ### Conclusion
 This was a fun and useful excercise, and I would be happy to give a guided tour of the code at any time. 
