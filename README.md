@@ -7,7 +7,7 @@ This is a solution to [the code challenge](coding-challenge.pdf) built using Rea
 3. Open `dist/index-1.0.1.html` in a browser
 
 ### Architecture
-The app is composed of 3 distinct sections:
+The app is composed of 3 distinct parts:
 
 1. **Models**: Contain the app data. Completely decoupled and independent of any other part of the app. Have no knowledge of views.
 
