@@ -50,5 +50,7 @@ The app is composed of 3 distinct parts:
 
 - **IE compatibility**: Media fragments are not fully supported in IE/Edge, an improved solution would be to use Javascript to navigate the video.
 
+- **Production Gulp Task**: Currently there is only a development gulp build task that does not minify, concatenate, etc.
+
 ### Conclusion
 I would be happy to give a guided tour of the code at any time. 
