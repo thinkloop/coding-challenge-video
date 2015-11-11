@@ -3,7 +3,7 @@ This is a solution to the [Krossover code challenge](coding-challenge.pdf) built
 
 ### Installation
 1. Clone the repo
-2. Build the project by simply running `gulp` in the project root
+2. Build the project by running `gulp` in the project root
 3. Open `dist/index-1.0.0.html` in a browser
 
 ### Architecture
@@ -13,14 +13,14 @@ The app is composed of 3 distinct sections:
 
 2. **Components**: Contain the app views in the form of React components. Decoupled from the rest of the app. Have no knowledge of models.
 
-3. **Events**: The glue that connects models and components. Events are broadcast from views, and responded to by listeners that effect changes in models, which then re-render the components with new data.
+3. **Events**: The glue that connects models and components. Events are broadcast from views, and responded to by listeners that effect changes in models, which in turn re-render the components with new data.
 
 ### Features
  
 - **Intricate States**: Various elements are displayed, hidden or styled based on context, for example:
-    - Save button does not show up if clip data is empty
-    - Play button changes style when a clip is played
-    - Video stops playing when a different clip starts being edited
+    - **Save button** is hidden if clip data is empty
+    - **Play button** changes style when a clip is played
+    - **Video** stops playing when a different clip starts being edited
 
 - **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modifiable inline in a WYSIWYG fashion.
 
