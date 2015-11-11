@@ -30,7 +30,7 @@ The app is composed of 3 distinct parts:
 
 - **Automated Versioning**: The build process uses the version number in `package.json` to create files and folders with version numbers for easy cache invalidation and version tracking.
 
-- **Event Tracking**: Open the console while using the site and notice every event being logged. This can be extended easily to save all user interactions to a statistics backend.
+- **Event Tracking**: Open the console while using the site and notice all events being logged. This can be extended easily to save all user interactions to a statistics backend.
 
 - **Object Inheritance**: The `fullVideo` model inherits from the `clip` model using prototypical inheritance.
 
@@ -40,15 +40,15 @@ The app is composed of 3 distinct parts:
 
 
 ### Sources of Improvement
-- **Data Validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks for these inputs, or other inputs.
+- **Data validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks for these inputs, or other inputs.
 
-- **Detect When a Clip Finishes Playing**: When a clip finishes playing no app events get fired to update the UI.
+- **Detect when a clip finishes playing**: When a clip finishes playing, no app events are fired to update the UI or perform other actions.
 
-- **Add Safeguards for Delete Clip Action**: Clicking the delete button instantly deletes the clip without confirmation or safeguards.
+- **Add safeguards when deleting clips**: Clicking the delete button instantly deletes the clip without confirmation or safeguards.
 
-- **Mobile Compatibility**: I did not verify whether the app looks good on mobile os's (android, ios, wp, etc.)
+- **Mobile compatibility**: I did not verify whether the app looks good on mobile OS's (android, ios, wp, etc.).
 
-- **IE Edge Compatibility**: Media fragments are not fully supported in IE, an improved solution would be to use Javascript to navigate the video.
+- **IE compatibility**: Media fragments are not fully supported in IE/Edge, an improved solution would be to use Javascript to navigate the video.
 
 ### Conclusion
 I would be happy to give a guided tour of the code at any time. 
