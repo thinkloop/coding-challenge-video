@@ -1,0 +1,192 @@
+html, body, div, aside, section, ul, ol {
+    display: block; position: relative;
+    box-sizing: border-box;
+    color: black;
+    background: #f6f6f6;
+    font-size: 10px;
+    font-family: franklin-gothic-urw-cond, sans-serif;
+    margin: 0; padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+span, h1, h2, h3, h4, h5, h6 {
+    display: inline; position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0; padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+input {
+    display: inline-block; position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.3rem; margin: 0;
+    border: 1px solid #696996;
+    outline: 0;
+}
+
+button {
+    display: inline-block; position: relative;
+    width: 2em; height: 2em;
+    padding: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    background: white;
+    border: 1px solid #696996;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+}
+
+#header {
+    display: block; position: relative;
+    margin: 2vw 0; padding: 1vw 2vw 1vw 3vw;
+    border: 1px solid #ddddee;
+    border-left: 0; border-right: 0;
+    
+    #logo {
+        width: 20vw;
+    }
+}
+
+#content {
+    display: flex; position: relative;
+    width: 100%; min-width: 42rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#clips {
+    display: block; position: relative;
+    width: 50%; min-width: 20rem; max-width: 40rem; max-height: 50vh;
+    margin: 0 4vw; padding-bottom: 2vw;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: auto;
+    
+    .clip {
+        display: flex; position: relative;
+        width: 100%; min-height: 1.5rem;
+        font-size: 1.1rem;
+        
+        &:hover {
+            .clip-buttons {
+                .edit-button {
+                    opacity: 1;
+                }
+            }
+        }
+            
+        &.clip-playing {
+            .clip-buttons {
+                .play-button {
+                    color: black;
+                    background: #c0c0c0;
+                }
+            }
+        }
+        
+        &.clip-edit {
+            & > input {
+                background: #ffffff;
+                outline: 1px solid #F39624;
+                border: 0;
+                margin-bottom: 1px;
+            }
+        }        
+        
+        & > * {
+            display: block;
+            margin: 0.5%; padding: 0.8rem 0.2rem;
+            line-height: 1.5rem;
+            border: 0;
+            border-bottom: 1px solid #ccccdd;
+        }
+        
+        .clip-name {
+            width: 40%;
+            font-weight: 700;
+        }
+        
+        .clip-start-time {
+            width: 20%;
+        } 
+        
+        .clip-end-time {
+            width: 20%;
+        } 
+        
+        .clip-buttons {
+            text-align: center;
+            padding: 0.5rem 0.2rem;
+            border: 0;
+            white-space: nowrap;
+            
+            & > * {
+                margin: 0.2rem 0.2rem 0 0;
+                vertical-align: bottom;
+                color: white;
+                font-family: FontAwesome;
+                font-size: 1rem;
+            }
+            
+            .edit-button {
+                opacity: 0;
+                transition: opacity 0.3s;
+                background: orange;
+            }
+            
+            .play-button {
+                width: 2.5em; height: 2.5em;
+                padding-left: 0.2em;                
+                background: #292929;
+                font-size: 0.8rem;
+            }      
+            
+            .delete-button {
+                background: #972e2e;
+            }  
+            
+            .save-button {
+                background: #54c55f;
+            }              
+        }         
+    }
+    
+    .new-button {
+        margin: 1rem;
+        color: black;
+        background: white;
+        font-family: FontAwesome;
+    }      
+}
+
+#video-container {
+    width: 50%; min-width: 20rem;
+    margin: 0 4vw 4vw 0;
+    background: black;
+    border-radius: 3px;
+    overflow: hidden;
+    
+    #video {
+        width: 100%;
+    }
+}
+
+.font-face(@family: arial, @weight: normal, @style: normal, @path: ''){
+    @font-face{
+        font-family: @family;
+        src:url('@{path}.eot');
+        src:url('@{path}.eot?#iefix') format('embedded-opentype'),
+            url('@{path}.woff') format('woff'),
+            url('@{path}.ttf') format('truetype'),
+            url('@{path}.svg#icon') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.font-face('FontAwesome', 'normal', 'normal', 'assets/fonts/fontawesome');
