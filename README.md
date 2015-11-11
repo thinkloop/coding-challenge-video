@@ -1,4 +1,4 @@
-# Krossover Code Challenge Solution
+# Code Challenge Solution
 This is a solution to the [Krossover code challenge](coding-challenge.pdf) built using React JS, Browserify, LessCSS, Gulp and EventEmitter in Flux-style. A running demo can be found here: http://krossover.thinkloop.com/
 
 ### Installation
@@ -40,15 +40,15 @@ The app is composed of 3 distinct sections:
 
 
 ### Sources of Improvement
-- **Data Validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks for these inputs.
+- **Data Validation**: The `startTime` and `endTime` of a clip expect the format `hh:mm:ss`, but there is currently no validation or masks for these inputs, or other inputs.
 
-- **Detect When a Clip Finishes Playing**: When a clip finishes playing there are no app events that get fired to update the UI.
+- **Detect When a Clip Finishes Playing**: When a clip finishes playing no app events get fired to update the UI.
 
-- **Add Confirmation for Delete Clip Action**: Clicking on the delete clip button instantly deletes the clip without confirmation, which could lead to mistakes. 
+- **Add Safeguards for Delete Clip Action**: Clicking the delete button instantly deletes the clip without confirmation or safeguards.
 
 - **Mobile Compatibility**: I did not verify whether the app looks good on mobile os's (android, ios, wp, etc.)
 
 - **IE Edge Compatibility**: Media fragments are not fully supported in IE, an improved solution would be to use Javascript to navigate the video.
 
 ### Conclusion
-This was a fun and useful excercise, and I would be happy to give a guided tour of the code at any time. 
+I would be happy to give a guided tour of the code at any time. 
