@@ -3,11 +3,12 @@ This is a solution to the [Krossover coding challenge](coding-challenge.pdf) bui
 
 ### Installation
 1. Clone the repo
-2. Build the project using gulp by simply running `gulp` in the project root
-3. Open the `dist/index-1.0.0.html` in a browser
+2. Build the project by simply running `gulp` in the project root
+3. Open `dist/index-1.0.0.html` in a browser
 
 ### Architecture
 The app is composed of 3 distinct sections:
+
 1. **Models**: Contain the app data. Completely decoupled and independent of any other part of the app. Have no knowledge of views.
 
 2. **Components**: Contain the app views in the form of React components. Completely decoupled from the rest of the app. Have no knowledge of models.
