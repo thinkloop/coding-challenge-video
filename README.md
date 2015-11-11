@@ -22,17 +22,17 @@ The app is composed of 3 distinct parts:
     - _Save button_ is hidden if clip has no data in any of its fields
     - _Video_ stops playing when a different clip is selected for editing
 
-- **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modifiable inline in a WYSIWYG fashion.
+- **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modified inline in a WYSIWYG fashion.
 
-- **Data Loaded in Parallel**: In the `loadAll()` method of the `models/models` object, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
-
-- **Object Inheritance**: The `fullVideo` model inherits from the `clip` model using prototypical inheritance.
+- **Data Loads in Parallel**: In the `loadAll()` method of the `models/models` object, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
 
 - **Continuous Build**: Gulp has been setup to watch changes in the code and automatically build the project upon changes.
 
 - **Automated Versioning**: The build process uses the version number in `package.json` to create files and folders with version numbers for easy cache invalidation and version tracking.
 
 - **Event Tracking**: Open the console while using the site and notice every event being logged. This can be extended easily to save all user interactions to a statistics backend.
+
+- **Object Inheritance**: The `fullVideo` model inherits from the `clip` model using prototypical inheritance.
 
 - **Deployed and Hosted on CDN**: The running demo is currently hosted on AWS S3 & Cloudfront and scalable to millions of users.
 
