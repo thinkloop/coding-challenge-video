@@ -9,11 +9,11 @@ This is a solution to [the code challenge](coding-challenge.pdf) built using Rea
 ### Architecture
 The app is composed of 3 distinct parts:
 
-1. **Models**: Contain the app data. Decoupled and independent of other parts of the app. Have no knowledge of views.
+1. **Models**: Contain the app data. Decoupled and independent of other parts of the app. They have no knowledge of views.
 
-2. **Components**: Contain the app views in the form of React components. Decoupled from the rest of the app. Have no knowledge of models.
+2. **Components**: Contain the app views in the form of React components. Decoupled from the rest of the app. They have no knowledge of models.
 
-3. **Events**: The glue that connects models and components. Events are broadcast from views, and responded to by listeners that make changes to models, and re-render components.
+3. **Events**: The glue that connects models and components. Events are broadcast from models and components, and responded to by listeners that make changes to models and re-render components.
 
 ### Features
  
