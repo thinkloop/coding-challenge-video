@@ -24,7 +24,7 @@ The app is composed of 3 distinct parts:
 
 - **Inline Clip Editing**: Rather than jarring the user with new interface elements for adding and editing clips, clips are modified inline in a WYSIWYG fashion.
 
-- **Data Loads in Parallel**: In the `loadAll()` method of the `models/models` object, you will notice the use of the `nimble` library to load the `clips` and the `fullVideo` models in parallel (currently mocked, but ready for a real async backend).
+- **Data Loads in Parallel**: In the `loadAll()` method of the `models/models` object, you will notice the use of the `nimble` library to load the `clips` and `fullVideo` models in parallel.
 
 - **Continuous Build**: Gulp has been setup to watch changes in the code and automatically build the project upon changes.
 
