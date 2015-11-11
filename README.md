@@ -4,7 +4,7 @@ This is a solution to the [Krossover code challenge](coding-challenge.pdf) built
 ### Installation
 1. Clone the repo
 2. Build the project by running `gulp` in the project root
-3. Open `dist/index-1.0.0.html` in a browser
+3. Open `dist/index-1.0.1.html` in a browser
 
 ### Architecture
 The app is composed of 3 distinct sections:

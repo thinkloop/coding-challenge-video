@@ -970,7 +970,7 @@ module.exports = React.createClass({
 			React.createElement(
 				'h1',
 				{ id: 'header' },
-				React.createElement('img', { id: 'logo', src: '1.0.0/krossover-logo.png', alt: 'Krossover' })
+				React.createElement('img', { id: 'logo', src: '1.0.1/krossover-logo.png', alt: 'Krossover' })
 			),
 			React.createElement(
 				'section',
